@@ -346,7 +346,7 @@
       </div>
     </section>
 
-    <section id="reiews" class="bg-secondary">
+    <section id="reviews" class="bg-secondary">
       <div class="container-lg">
         <div class="text-center">
           <h2><i class="bi bi-stars"></i>Book Reviews</h2>
@@ -357,7 +357,7 @@
         <div class="row my-5 g-5 justify-content-center align-items-start">
           <div class="col-lg-8">
             <div class="list-group">
-              <dic class="list-group-item py-3">
+              <div class="list-group-item py-3">
                 <div class="pb-2">
                   <i class="bi bi-star-fill"></i>
                   <i class="bi bi-star-fill"></i>
@@ -373,8 +373,8 @@
                   deserunt? Minus explicabo eius recusandae sequi vel.
                 </p>
                 <small>Review by <strong>Bluno</strong></small>
-              </dic>
-              <dic class="list-group-item py-3">
+              </div>
+              <div class="list-group-item py-3">
                 <div class="pb-2">
                   <i class="bi bi-star-fill"></i>
                   <i class="bi bi-star-fill"></i>
@@ -390,8 +390,8 @@
                   deserunt? Minus explicabo eius recusandae sequi vel.
                 </p>
                 <small>Review by <strong>Mulo</strong></small>
-              </dic>
-              <dic class="list-group-item py-3">
+              </div>
+              <div class="list-group-item py-3">
                 <div class="pb-2">
                   <i class="bi bi-star-fill"></i>
                   <i class="bi bi-star-fill"></i>
@@ -407,8 +407,8 @@
                   deserunt? Minus explicabo eius recusandae sequi vel.
                 </p>
                 <small>Review by <strong>Kulo</strong></small>
-              </dic>
-              <dic class="list-group-item py-3">
+              </div>
+              <div class="list-group-item py-3">
                 <div class="pb-2">
                   <i class="bi bi-star-fill"></i>
                   <i class="bi bi-star-fill"></i>
@@ -424,8 +424,8 @@
                   deserunt? Minus explicabo eius recusandae sequi vel.
                 </p>
                 <small>Review by <strong>Dani</strong></small>
-              </dic>
-              <dic class="list-group-item py-3">
+              </div>
+              <div class="list-group-item py-3">
                 <div class="pb-2">
                   <i class="bi bi-star-fill"></i>
                   <i class="bi bi-star-fill"></i>
@@ -441,7 +441,7 @@
                   deserunt? Minus explicabo eius recusandae sequi vel.
                 </p>
                 <small>Review by <strong>Peter</strong></small>
-              </dic>
+              </div>
             </div>
           </div>
         </div>
@@ -460,26 +460,57 @@
           <div class="col-lg-6">
             <form>
               <label for="email" class="form-label">Email address:</label>
-              <input
-                type="Email"
-                class="form-control"
-                id="email"
-                placeholder="e.g. Bluno@example.com"
-              />
+              <div class="mb-4 input-group">
+                <span class="input-group-text">
+                  <i class="bi bi-envelope-fill"></i>
+                </span>
+                <input
+                  type="Email"
+                  class="form-control"
+                  id="email"
+                  placeholder="e.g. Bluno@example.com"
+                />
+              </div>
+
               <label for="name" class="form-label">Name:</label>
-              <input
-                type="text"
-                class="form-control"
-                id="name"
-                placeholder="e.g Bluno"
-              />
-              <label for="subject" class="form-label">What is your question about?</label>
-              slect class="form-select mb-3" id="subject">
-                <option value="" selected disabled>Choose a subject...</option>
-                <option value="pricing" selected>Pricing Plans</option>
-                <option value="topics">Book Topics</option>
-                <option value="reviews">Book Reviews</option>
-                <option value="other">Other Questions</option>
+              <div class="input-group mb-4">
+                <span class="input-group-text">
+                  <i class="bi bi-person-fill"></i>
+                </span>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="e.g. Bluno"
+                />
+              </div>
+              <label for="subject" class="form-label"
+                >What is your question about?</label
+              >
+              <div class="input-group mb-4">
+                <span class="input-group-text">
+                  <i class="bi bi-chat-right-dots-fill"></i>
+                </span>
+                <select class="form-select" id="subject">
+                  <option value="pricing" selected>Pricing query</option>
+                  <option value="content">Content query</option>
+                  <option value="other">Other query</option>
+                </select>
+              </div>
+
+              <div class="form-floating mb-4 mt-5">
+                <textarea
+                  id="query"
+                  class="form-control"
+                  style="height: 140px"
+                ></textarea>
+                <label for="query">Your query...</label>
+              </div>
+              <div class="mb-4 text-center">
+                <button type="submit" class="btn btn-secondary btn-lg">
+                  Submit
+                </button>
+              </div>
             </form>
           </div>
         </div>
