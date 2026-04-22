@@ -77,11 +77,17 @@
             <a href="#pricing" class="btn btn-secondary btn-lg">Buy Now</a>
           </div>
           <div class="col-md-5 text-center d-none d-md-block">
-            <img
-              class="img-fluid"
-              src="assets/ebook-cover.png"
-              alt="ebook cover"
-            />
+            <span
+              class="tt"
+              data-bs-placement="bottom"
+              title="Net Ninja Book cover"
+            >
+              <img
+                class="img-fluid"
+                src="assets/ebook-cover.png"
+                alt="ebook cover"
+              />
+            </span>
           </div>
         </div>
       </div>
@@ -470,6 +476,11 @@
                   id="email"
                   placeholder="e.g. Bluno@example.com"
                 />
+                <span class="input-group-text">
+                  <span class="tt" data-bs-placement="bottom" title="Enter an email address we can reply to">
+                  <i class="bi bi-question-circle text-muted"></i>
+                  </span>
+                </span>
               </div>
 
               <label for="name" class="form-label">Name:</label>
@@ -483,6 +494,11 @@
                   id="name"
                   placeholder="e.g. Bluno"
                 />
+                <span class="input-group-text">
+                  <span class="tt" data-bs-placement="bottom" title="Yes...">
+                  <i class="bi bi-question-circle text-muted"></i>
+                  </span>
+                </span>
               </div>
               <label for="subject" class="form-label"
                 >What is your question about?</label
@@ -522,5 +538,11 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const tooltips = document.querySelectorAll(".tt");
+      tooltips.forEach((t) => {
+        new bootstrap.Tooltip(t);
+      });
+    </script>
   </body>
 </html>
